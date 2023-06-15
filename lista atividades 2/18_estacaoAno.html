@@ -1,0 +1,46 @@
+<script>
+    /*
+    //PROBLEMA: ESTAÇÃO DO ANO
+    Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+
+    //ENTRADA
+
+    let hemisferio = prompt("Em qual hemisfério você está? (Norte ou Sul)");
+let mes = prompt("Qual é o mês atual?");
+
+if (hemisferio.toLowerCase() === "norte") {
+  if (mes === "dezembro" || mes === "janeiro" || mes === "fevereiro") {
+    alert("Estação do ano: Inverno");
+  } else if (mes === "março" || mes === "abril" || mes === "maio") {
+    alert("Estação do ano: Primavera");
+  } else if (mes === "junho" || mes === "julho" || mes === "agosto") {
+    alert("Estação do ano: Verão");
+  } else if (mes === "setembro" || mes === "outubro" || mes === "novembro") {
+    alert("Estação do ano: Outono");
+  } else {
+    alert("Mês inválido.");
+  }
+} else if (hemisferio.toLowerCase() === "sul") {
+  if (mes === "dezembro" || mes === "janeiro" || mes === "fevereiro") {
+    alert("Estação do ano: Verão");
+  } else if (mes === "março" || mes === "abril" || mes === "maio") {
+    alert("Estação do ano: Outono");
+  } else if (mes === "junho" || mes === "julho" || mes === "agosto") {
+    alert("Estação do ano: Inverno");
+  } else if (mes === "setembro" || mes === "outubro" || mes === "novembro") {
+    alert("Estação do ano: Primavera");
+  } else {
+    alert("Mês inválido.");
+  }
+} else {
+  alert("Hemisfério inválido.");
+}
+    //PROCESSAMENTO
+
+    
+    //SAÍDA
+
+
+</script>
